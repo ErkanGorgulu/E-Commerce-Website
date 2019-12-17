@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/shopping-cart.css" rel="stylesheet" />
+    <link href="~/Content/top-navbar.css" rel="stylesheet" />
+    <link href="~/Content/carousel.css" rel="stylesheet" />
+    <link href="~/Content/footer.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/carousel.js"></script>
+    <script src="~/Scripts/topbar.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="container">
+        @Html.Partial("_Topbar")
+    </div>
+    @RenderSection("Carousel", required: false)
+    <div class="container">
+        @RenderBody()
+    </div>
+    @Html.Partial("_Footer")
+</div>
+</body>
+</html>
