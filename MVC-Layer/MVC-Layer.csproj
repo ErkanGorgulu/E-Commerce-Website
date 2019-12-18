@@ -100,8 +100,12 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\footer.css" />
-    <Content Include="Content\images\dakseviet-600x600.jpg" />
-    <Content Include="Content\images\indir.jpg" />
+    <Content Include="Content\images\countrylogo.png" />
+    <Content Include="Content\images\kaft_logo-hover.png" />
+    <Content Include="Content\images\kaft_logo-hover.svg" />
+    <Content Include="Content\images\kaft_logo.png" />
+    <Content Include="Content\images\kaft_logo.svg" />
+    <Content Include="Content\images\languagelogo.png" />
     <Content Include="Content\shopping-cart.css" />
     <Content Include="Content\top-navbar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
