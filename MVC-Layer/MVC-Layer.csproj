@@ -107,7 +107,7 @@
     <Content Include="Content\images\kaft_logo.svg" />
     <Content Include="Content\images\languagelogo.png" />
     <Content Include="Content\shopping-cart.css" />
-    <Content Include="Content\top-navbar.css" />
+    <Content Include="Content\navbar.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />

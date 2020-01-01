@@ -10,7 +10,7 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
     <link href="~/Content/shopping-cart.css" rel="stylesheet" />
-    <link href="~/Content/top-navbar.css" rel="stylesheet" />
+    <link href="~/Content/navbar.css" rel="stylesheet" />
     <link href="~/Content/carousel.css" rel="stylesheet" />
     <link href="~/Content/footer.css" rel="stylesheet" />
     <script src="~/Scripts/jquery-3.4.1.js"></script>
@@ -21,15 +21,20 @@
 
 </head>
 <body>
-<div class="container-fluid">
-    <div class="container">
-        @Html.Partial("_Topbar")
+    <div class="container-fluid">
+        <div class="container">
+            @*<div class="row">
+                @Html.Partial("_Topbar")
+            </div>*@
+            <div class="row text-center">
+                @Html.Partial("_Navbar")
+            </div>
+        </div>
+        @RenderSection("Carousel", required: false)
+        <div class="container">
+            @RenderBody()
+        </div>
+        @Html.Partial("_Footer")
     </div>
-    @RenderSection("Carousel", required: false)
-    <div class="container">
-        @RenderBody()
-    </div>
-    @Html.Partial("_Footer")
-</div>
 </body>
 </html>

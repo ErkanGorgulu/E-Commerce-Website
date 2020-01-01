@@ -1,53 +1,85 @@
-﻿
-<nav class="navbar navbar-inverse">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="https://lh3.googleusercontent.com/-N4NB2F966TU/WM7V1KYusRI/AAAAAAAADtA/fPvGVNzOkCo7ZMqLI6pPITE9ZF7NONmawCJoC/w185-h40-p-rw/logo.png"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-left">
-                <li class=""><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">About <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Page 1-1</a></li>
-                        <li><a href="#">Page 1-2</a></li>
-                        <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">gallery</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-            <form class="navbar-form navbar-right">
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default-1" type="submit">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Search">
+﻿<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img src="~/Content/images/kaft_logo.png" width="150px" height="75px"/></a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto" >
+            <li id="navbar-button" class="nav-item dropdown" data-animations="fadeInDown fadeInLeft fadeInUp fadeInRight">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">ERKEK</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">TASARIM TİŞÖRT</a>
+                    <a class="dropdown-item" href="#">BASIC TİŞÖRT</a>
+                    <a class="dropdown-item" href="#">ÇANTA</a>
+                    <a class="dropdown-item" href="#">SWEATSHIRT</a>
+                    <a class="dropdown-item" href="#">FERMUARLI KAPŞONLU</a>
+                    <a class="dropdown-item" href="#">TASARIM KAPŞONLU</a>
+                    <a class="dropdown-item" href="#">BERE</a>
+                    <a class="dropdown-item" href="#">ÇORAP</a>
                 </div>
+            </li>
+            <li id="navbar-button" class="nav-item dropdown" data-animations="fadeInDown fadeInLeft fadeInUp fadeInRight">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">KADIN</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">TASARIM TİŞÖRT</a>
+                    <a class="dropdown-item" href="#">BASIC TİŞÖRT</a>
+                    <a class="dropdown-item" href="#">ÇANTA</a>
+                    <a class="dropdown-item" href="#">SWEATSHIRT</a>
+                    <a class="dropdown-item" href="#">FERMUARLI KAPŞONLU</a>
+                    <a class="dropdown-item" href="#">TASARIM KAPŞONLU</a>
+                    <a class="dropdown-item" href="#">BERE</a>
+                    <a class="dropdown-item" href="#">ÇORAP</a>
+                    <a class="dropdown-item" href="#">ATLET</a>
+                </div>
+            </li>
+            <li id="navbar-button" class="nav-item dropdown" data-animations="fadeInDown fadeInLeft fadeInUp fadeInRight">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">BİLGİ</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">KAFT HAKKINDA</a>
+                    <a class="dropdown-item" href="#">ÜRÜN ÖZELLİKLERİ</a>
+                    <a class="dropdown-item" href="#">TASARIMCILAR</a>
+                    <a class="dropdown-item" href="#">SİPARİŞ TAKİBİ</a>
+                    <a class="dropdown-item" href="#">EKİBE KATIL</a>
+                    <a class="dropdown-item" href="#">YARDIM</a>
+                    <a class="dropdown-item" href="#">İLETİŞİM</a>
+                </div>
+            </li>
 
-                <span class="cart-heart  hidden-sm hidden-xs">
-                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                </span>
-                <span class="cart-heart  hidden-md hidden-lg">
-                    <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-usd" aria-hidden="true"></i></a>
-                </span>
-            </form>
+            <!-- Dropdown -->
+            <li id="navbar-button" class="nav-item dropdown" data-animations="fadeInDown fadeInLeft fadeInUp fadeInRight">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">EKSTRA</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">FOTOĞRAFLARINIZ</a>
+                    <a class="dropdown-item" href="#">LOOKBOOK</a>
+                    <a class="dropdown-item" href="#">VİDEOLAR</a>
+                    <a class="dropdown-item" href="#">JOURNEYS</a>
+                    <a class="dropdown-item" href="#">BLOG</a>
+                    <a class="dropdown-item" href="#">DUVAR KAĞITLARI</a>
+                </div>
+            </li>
 
-        </div>
+        </ul>
+        <!-- Links -->
+        <form class="float-right">
+            <input class="btn" type="button" value="Giriş"/>
+            <input class="btn" type="button" value="Üye Ol"/>
+        </form>
     </div>
+    <!-- Collapsible content -->
+
 </nav>
+<!--/.Navbar-->
